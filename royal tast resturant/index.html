@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Royal Taste Restaurant – Fine dining, handcrafted dishes, and unforgettable moments in every bite." />
+  <meta name="keywords" content="restaurant, fine dining, Royal Taste, food, reservation, pizza, bbq, burgers" />
+  <meta name="author" content="Royal Taste Restaurant" />
+  <title>Royal Taste Restaurant | Fine Dining Experience</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode" data-theme="dark">
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <i class="fa-solid fa-utensils"></i>
+      </div>
+      <p class="loader-name">Royal Taste</p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ░░ BACK TO TOP ░░ -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════
+       NAVBAR
+  ═══════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Royal Taste Home">
+        <i class="fa-solid fa-utensils"></i>
+        <span>Royal <em>Taste</em></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home"      role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"     role="menuitem">About</a></li>
+        <li role="none"><a href="#dishes"    role="menuitem">Dishes</a></li>
+        <li role="none"><a href="#menu"      role="menuitem">Menu</a></li>
+        <li role="none"><a href="#offers"    role="menuitem">Offers</a></li>
+        <li role="none"><a href="#chefs"     role="menuitem">Chefs</a></li>
+        <li role="none"><a href="#reviews"   role="menuitem">Reviews</a></li>
+        <li role="none"><a href="#reserve"   role="menuitem">Reserve</a></li>
+        <li role="none"><a href="#gallery"   role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#contact"   role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle light/dark mode">
+          <i class="fa-solid fa-sun"  id="icon-sun"></i>
+          <i class="fa-solid fa-moon" id="icon-moon"></i>
+        </button>
+        <a href="#reserve" class="btn btn-gold nav-cta">Book Table</a>
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════
+       1. HERO
+  ═══════════════════════════════ -->
+  <section id="home" class="hero" aria-label="Hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" aria-hidden="true"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow"><i class="fa-solid fa-star"></i> Est. 1998 · Karachi, Pakistan</p>
+      <h1 class="hero-title">
+        Where Every<br />
+        <em>Dish Tells</em><br />
+        a Story
+      </h1>
+      <p class="hero-sub">Handcrafted flavours, timeless recipes, and a dining room built for moments that last.</p>
+      <div class="hero-btns">
+        <a href="#menu"    class="btn btn-gold">Explore Menu</a>
+        <a href="#reserve" class="btn btn-outline">Book a Table <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>18+</strong><span>Years of craft</span></div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat"><strong>120+</strong><span>Menu items</span></div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat"><strong>4.9★</strong><span>Guest rating</span></div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════
+       2. ABOUT
+  ═══════════════════════════════ -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Images -->
+        <div class="about-images reveal">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Interior of Royal Taste Restaurant" loading="lazy" />
+          </div>
+          <div class="about-img-accent glass-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Beautifully plated dish" loading="lazy" />
+            <div class="about-badge">
+              <i class="fa-solid fa-award"></i>
+              <strong>Award Winning</strong>
+              <span>Best Fine Dining 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy -->
+        <div class="about-copy reveal">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">A Legacy Seasoned<br /><em>Over Two Decades</em></h2>
+          <p>Royal Taste was born from one simple belief: exceptional food changes how people feel about a place. Since 1998, our kitchen has fused classic European technique with the bold spice traditions of South Asia — a marriage unique to our table.</p>
+          <p>Every ingredient is sourced from farmers we trust. Every plate is finished by hands that have done it thousands of times, and cared each time.</p>
+
+          <ul class="about-pillars" role="list">
+            <li><i class="fa-solid fa-seedling"></i><span><strong>Farm-to-table</strong> — seasonal ingredients, sourced weekly</span></li>
+            <li><i class="fa-solid fa-fire-flame-curved"></i><span><strong>Open kitchen</strong> — nothing hidden from our guests</span></li>
+            <li><i class="fa-solid fa-medal"></i><span><strong>Awarded cuisine</strong> — recognised three years running</span></li>
+          </ul>
+          <a href="#menu" class="btn btn-gold">Discover Our Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       3. FEATURED DISHES
+  ═══════════════════════════════ -->
+  <section id="dishes" class="dishes section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Chef's Selection</p>
+        <h2 class="section-title">Featured <em>Dishes</em></h2>
+        <p class="section-sub">Plates that guests return for, week after week.</p>
+      </div>
+
+      <div class="dishes-grid">
+
+        <article class="dish-card glass-card reveal" aria-label="Truffle Wagyu Ribeye">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Truffle Wagyu Ribeye" loading="lazy" />
+            <span class="dish-badge">Chef's Pick</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-meta"><span class="dish-cat">BBQ</span><span class="dish-rating"><i class="fa-solid fa-star"></i> 4.9</span></div>
+            <h3>Truffle Wagyu Ribeye</h3>
+            <p>A4 Wagyu, black truffle butter, roasted garlic jus, asparagus.</p>
+            <div class="dish-footer">
+              <span class="dish-price">Rs 3,800</span>
+              <button class="btn btn-gold-sm" aria-label="Order Truffle Wagyu Ribeye">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card glass-card reveal" aria-label="Saffron Lobster Bisque">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80" alt="Saffron Lobster Bisque" loading="lazy" />
+            <span class="dish-badge popular">Popular</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-meta"><span class="dish-cat">Seafood</span><span class="dish-rating"><i class="fa-solid fa-star"></i> 4.8</span></div>
+            <h3>Saffron Lobster Bisque</h3>
+            <p>Hand-picked lobster, Persian saffron, crème fraîche, sourdough crisp.</p>
+            <div class="dish-footer">
+              <span class="dish-price">Rs 2,200</span>
+              <button class="btn btn-gold-sm" aria-label="Order Saffron Lobster Bisque">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card glass-card reveal" aria-label="Smoked Brisket Burger">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Smoked Brisket Burger" loading="lazy" />
+          </div>
+          <div class="dish-body">
+            <div class="dish-meta"><span class="dish-cat">Burgers</span><span class="dish-rating"><i class="fa-solid fa-star"></i> 4.7</span></div>
+            <h3>Smoked Brisket Burger</h3>
+            <p>12-hour smoked brisket, aged cheddar, pickled jalapeños, house-made brioche.</p>
+            <div class="dish-footer">
+              <span class="dish-price">Rs 1,650</span>
+              <button class="btn btn-gold-sm" aria-label="Order Smoked Brisket Burger">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card glass-card reveal" aria-label="Hazelnut Fondant">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Hazelnut Fondant" loading="lazy" />
+            <span class="dish-badge new">New</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-meta"><span class="dish-cat">Desserts</span><span class="dish-rating"><i class="fa-solid fa-star"></i> 5.0</span></div>
+            <h3>Hazelnut Fondant</h3>
+            <p>Warm hazelnut chocolate cake, salted caramel, vanilla bean gelato.</p>
+            <div class="dish-footer">
+              <span class="dish-price">Rs 950</span>
+              <button class="btn btn-gold-sm" aria-label="Order Hazelnut Fondant">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       4. FULL MENU
+  ═══════════════════════════════ -->
+  <section id="menu" class="menu-section section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Full Menu</p>
+        <h2 class="section-title">Explore <em>Every Plate</em></h2>
+      </div>
+
+      <!-- Search + Filter -->
+      <div class="menu-controls reveal">
+        <div class="menu-search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="menu-search" placeholder="Search a dish…" aria-label="Search menu" />
+        </div>
+        <div class="menu-filters" role="group" aria-label="Filter by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pizza">Pizza</button>
+          <button class="filter-btn" data-filter="burgers">Burgers</button>
+          <button class="filter-btn" data-filter="bbq">BBQ</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menu-grid" role="list">
+
+        <!-- PIZZA -->
+        <div class="menu-item glass-card" data-cat="pizza" role="listitem">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Margherita Royale" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Margherita Royale</h4><span class="dish-price">Rs 1,100</span>
+            </div>
+            <p>Buffalo mozzarella, San Marzano tomatoes, fresh basil, EVOO.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="pizza" role="listitem">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Spicy Nduja Pizza" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Spicy Nduja Pizza</h4><span class="dish-price">Rs 1,350</span>
+            </div>
+            <p>Calabrian nduja, roasted red pepper, fior di latte, honey drizzle.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="pizza" role="listitem">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=400&q=80" alt="Truffle Mushroom Pizza" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Truffle Mushroom Pizza</h4><span class="dish-price">Rs 1,600</span>
+            </div>
+            <p>Wild mushroom blend, truffle oil, taleggio, rosemary.</p>
+          </div>
+        </div>
+
+        <!-- BURGERS -->
+        <div class="menu-item glass-card" data-cat="burgers" role="listitem">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Classic Royal Burger" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Classic Royal Burger</h4><span class="dish-price">Rs 1,200</span>
+            </div>
+            <p>Angus beef, aged cheddar, lettuce, tomato, secret royal sauce.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="burgers" role="listitem">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80" alt="Crispy Chicken Stack" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Crispy Chicken Stack</h4><span class="dish-price">Rs 1,100</span>
+            </div>
+            <p>Buttermilk fried chicken, slaw, pickles, chipotle mayo.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="burgers" role="listitem">
+          <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80" alt="Mushroom Swiss Burger" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Mushroom Swiss Burger</h4><span class="dish-price">Rs 1,300</span>
+            </div>
+            <p>Sautéed mushrooms, Swiss cheese, caramelised onion, brioche bun.</p>
+          </div>
+        </div>
+
+        <!-- BBQ -->
+        <div class="menu-item glass-card" data-cat="bbq" role="listitem">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Beef Ribs Platter" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Beef Ribs Platter</h4><span class="dish-price">Rs 3,200</span>
+            </div>
+            <p>Fall-off-the-bone ribs, house BBQ glaze, coleslaw, corn.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="bbq" role="listitem">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400&q=80" alt="Mixed Grill Royale" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Mixed Grill Royale</h4><span class="dish-price">Rs 4,500</span>
+            </div>
+            <p>Lamb chops, chicken tikka, seekh kebab, naan, mint raita.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="bbq" role="listitem">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Smoked Chicken Thighs" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Smoked Chicken Thighs</h4><span class="dish-price">Rs 1,800</span>
+            </div>
+            <p>Slow-smoked, piri-piri glaze, grilled corn salsa.</p>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-item glass-card" data-cat="desserts" role="listitem">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80" alt="Warm Chocolate Fondant" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Warm Chocolate Fondant</h4><span class="dish-price">Rs 950</span>
+            </div>
+            <p>Dark chocolate, salted caramel core, vanilla gelato.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="desserts" role="listitem">
+          <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=400&q=80" alt="Pistachio Baklava Cheesecake" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Pistachio Baklava Cheesecake</h4><span class="dish-price">Rs 850</span>
+            </div>
+            <p>New York-style base, baklava crust, rose water, crushed pistachio.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="desserts" role="listitem">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80" alt="Crème Brûlée" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Vanilla Crème Brûlée</h4><span class="dish-price">Rs 780</span>
+            </div>
+            <p>Classic Tahitian vanilla custard, torched sugar crust, fresh berries.</p>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-item glass-card" data-cat="drinks" role="listitem">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Virgin Mojito" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Virgin Mojito</h4><span class="dish-price">Rs 420</span>
+            </div>
+            <p>Fresh mint, lime, cane sugar, sparkling water, crushed ice.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="drinks" role="listitem">
+          <img src="https://images.unsplash.com/photo-1555696958-c5049b866f6f?w=400&q=80" alt="Mango Lassi" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Royal Mango Lassi</h4><span class="dish-price">Rs 380</span>
+            </div>
+            <p>Alphonso mango pulp, full-cream yoghurt, a pinch of cardamom.</p>
+          </div>
+        </div>
+
+        <div class="menu-item glass-card" data-cat="drinks" role="listitem">
+          <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=80" alt="Cold Brew Coffee" loading="lazy" />
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <h4>Cold Brew Coffee</h4><span class="dish-price">Rs 480</span>
+            </div>
+            <p>Single-origin Ethiopian beans, 18-hour cold steep, oat milk option.</p>
+          </div>
+        </div>
+
+      </div><!-- /menu-grid -->
+
+      <p id="menu-empty" class="menu-empty" hidden>No dishes match your search.</p>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       5. SPECIAL OFFERS
+  ═══════════════════════════════ -->
+  <section id="offers" class="offers section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Exclusive Deals</p>
+        <h2 class="section-title">Today's <em>Special Offers</em></h2>
+      </div>
+
+      <div class="offers-grid">
+
+        <div class="offer-card offer-card--main glass-card reveal" aria-label="Today's Special">
+          <div class="offer-img">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&q=80" alt="Today's Special – Mixed Grill Royale" loading="lazy" />
+          </div>
+          <div class="offer-body">
+            <span class="offer-tag">Today's Special</span>
+            <h3>Mixed Grill Royale</h3>
+            <p>Our signature platter for two — every Sunday, exclusively priced.</p>
+            <div class="offer-prices">
+              <span class="offer-old">Rs 4,500</span>
+              <span class="offer-new">Rs 3,200</span>
+              <span class="offer-pct">–30%</span>
+            </div>
+            <a href="#reserve" class="btn btn-gold">Claim Offer</a>
+          </div>
+        </div>
+
+        <div class="offer-card glass-card reveal" aria-label="Family Feast Deal">
+          <span class="offer-tag">Weekend Deal</span>
+          <i class="fa-solid fa-users offer-icon"></i>
+          <h3>Family Feast</h3>
+          <p>2 mains + 4 sides + 4 drinks. Perfect for a Sunday together.</p>
+          <div class="offer-prices">
+            <span class="offer-old">Rs 8,000</span>
+            <span class="offer-new">Rs 5,500</span>
+            <span class="offer-pct">–31%</span>
+          </div>
+          <a href="#reserve" class="btn btn-outline">Book Now</a>
+        </div>
+
+        <div class="offer-card glass-card reveal" aria-label="Dessert Duo Deal">
+          <span class="offer-tag">Sweet Deal</span>
+          <i class="fa-solid fa-cake-candles offer-icon"></i>
+          <h3>Dessert Duo</h3>
+          <p>Any two desserts for a single, indulgent price. Every evening after 8 PM.</p>
+          <div class="offer-prices">
+            <span class="offer-old">Rs 1,900</span>
+            <span class="offer-new">Rs 1,299</span>
+            <span class="offer-pct">–32%</span>
+          </div>
+          <a href="#reserve" class="btn btn-outline">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       6. CHEFS
+  ═══════════════════════════════ -->
+  <section id="chefs" class="chefs section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">The Kitchen</p>
+        <h2 class="section-title">Meet Our <em>Head Chefs</em></h2>
+        <p class="section-sub">The hands behind every plate you love.</p>
+      </div>
+
+      <div class="chefs-grid">
+
+        <div class="chef-card glass-card reveal">
+          <div class="chef-img">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="Chef Aryan Mehra" loading="lazy" />
+            <div class="chef-social">
+              <a href="#" aria-label="Chef Aryan on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Chef Aryan on X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="chef-body">
+            <h3>Aryan Mehra</h3>
+            <span class="chef-role">Executive Chef</span>
+            <p>Trained at Le Cordon Bleu Paris. 20 years mastering the intersection of French and South Asian cuisine.</p>
+          </div>
+        </div>
+
+        <div class="chef-card glass-card reveal">
+          <div class="chef-img">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&q=80" alt="Chef Sara Naqvi" loading="lazy" />
+            <div class="chef-social">
+              <a href="#" aria-label="Chef Sara on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Chef Sara on X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="chef-body">
+            <h3>Sara Naqvi</h3>
+            <span class="chef-role">Pastry Chef</span>
+            <p>Award-winning dessert architect. Her Pistachio Baklava Cheesecake has been featured in Condé Nast Traveller.</p>
+          </div>
+        </div>
+
+        <div class="chef-card glass-card reveal">
+          <div class="chef-img">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3960763?w=400&q=80" alt="Chef Bilal Hasan" loading="lazy" />
+            <div class="chef-social">
+              <a href="#" aria-label="Chef Bilal on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Chef Bilal on X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="chef-body">
+            <h3>Bilal Hasan</h3>
+            <span class="chef-role">Grill & BBQ Chef</span>
+            <p>Pitmaster with 14 years of fire-craft. His Mixed Grill Royale is the most re-ordered dish on the menu.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       7. REVIEWS / TESTIMONIALS
+  ═══════════════════════════════ -->
+  <section id="reviews" class="reviews section-pad" aria-label="Customer Reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Guest Voices</p>
+        <h2 class="section-title">What Our <em>Guests Say</em></h2>
+      </div>
+
+      <div class="testimonial-wrap reveal">
+        <div class="testimonial-slider" id="testimonial-slider" role="region" aria-label="Testimonial carousel" aria-live="polite">
+
+          <div class="testimonial-slide glass-card active" role="group" aria-label="Review 1 of 5">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"The Truffle Wagyu Ribeye is the single best thing I have eaten in Karachi. The ambiance, the service, the finishing touches — Royal Taste earns every star."</blockquote>
+            <div class="testi-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ayesha K." loading="lazy" />
+              <div><strong>Ayesha K.</strong><span>Karachi, Pakistan</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide glass-card" role="group" aria-label="Review 2 of 5">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"Booked a table for our anniversary. Chef Aryan sent out a surprise amuse-bouche and a personalised dessert. You don't expect that level of thoughtfulness anywhere in the city."</blockquote>
+            <div class="testi-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Hamza R." loading="lazy" />
+              <div><strong>Hamza R.</strong><span>Lahore, Pakistan</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide glass-card" role="group" aria-label="Review 3 of 5">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"Sara's Pistachio Baklava Cheesecake made my entire table go silent. Pure magic. We ordered a second one. Non-negotiable."</blockquote>
+            <div class="testi-author">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nadia M." loading="lazy" />
+              <div><strong>Nadia M.</strong><span>Dubai, UAE</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide glass-card" role="group" aria-label="Review 4 of 5">
+            <div class="testi-stars" aria-label="4 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <blockquote>"Travelled from Islamabad specifically to dine here. The Mixed Grill Royale fed three people and left us all unable to move. Worth every kilometre."</blockquote>
+            <div class="testi-author">
+              <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Usman T." loading="lazy" />
+              <div><strong>Usman T.</strong><span>Islamabad, Pakistan</span></div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide glass-card" role="group" aria-label="Review 5 of 5">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"I host quarterly client dinners and have settled on Royal Taste permanently. The private dining room, the sommelier-equivalent for mocktails, and the attentiveness — irreplaceable."</blockquote>
+            <div class="testi-author">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Sana F." loading="lazy" />
+              <div><strong>Sana F.</strong><span>Karachi, Pakistan</span></div>
+            </div>
+          </div>
+
+        </div><!-- /testimonial-slider -->
+
+        <div class="testi-controls">
+          <button id="testi-prev" aria-label="Previous review"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testi-dots" id="testi-dots" role="tablist" aria-label="Review navigation"></div>
+          <button id="testi-next" aria-label="Next review"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       8. RESERVATION
+  ═══════════════════════════════ -->
+  <section id="reserve" class="reserve section-pad">
+    <div class="container">
+      <div class="reserve-grid">
+        <div class="reserve-copy reveal">
+          <p class="section-eyebrow">Reservations</p>
+          <h2 class="section-title">Reserve Your<br /><em>Table</em></h2>
+          <p>We host intimate dinners, corporate evenings, and milestone celebrations. Secure your seat and we'll handle the rest.</p>
+          <ul class="reserve-info" role="list">
+            <li><i class="fa-solid fa-clock"></i><span>Open daily · 12 PM – 11 PM</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>+92 21 3456 7890</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>reserve@royaltaste.pk</span></li>
+          </ul>
+        </div>
+
+        <form id="reserve-form" class="reserve-form glass-card reveal" novalidate aria-label="Table reservation form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name *</label>
+              <input type="text"  id="res-name"  name="name"   placeholder="Ayesha Khan"    autocomplete="name"  />
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email *</label>
+              <input type="email" id="res-email" name="email"  placeholder="you@example.com" autocomplete="email" />
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-phone">Phone *</label>
+              <input type="tel"   id="res-phone" name="phone"  placeholder="+92 300 1234567" autocomplete="tel"   />
+              <span class="form-error" id="err-phone"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-guests">Guests *</label>
+              <select id="res-guests" name="guests" aria-required="true">
+                <option value="">Select…</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6+">6+ Guests</option>
+              </select>
+              <span class="form-error" id="err-guests"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date *</label>
+              <input type="date" id="res-date" name="date" />
+              <span class="form-error" id="err-date"></span>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Time *</label>
+              <input type="time" id="res-time" name="time" min="12:00" max="22:30" />
+              <span class="form-error" id="err-time"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="res-note">Special Requests</label>
+            <textarea id="res-note" name="note" rows="3" placeholder="Dietary needs, occasion, seating preference…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-full">
+            <i class="fa-regular fa-calendar-check"></i> Confirm Reservation
+          </button>
+          <p id="form-success" class="form-success" hidden>
+            <i class="fa-solid fa-circle-check"></i> Your table is reserved! We'll be in touch shortly.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       9. GALLERY
+  ═══════════════════════════════ -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">The Experience</p>
+        <h2 class="section-title">A Taste in <em>Every Frame</em></h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item gallery-item--tall">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Restaurant interior" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80" alt="Beautifully plated main course" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700&q=80" alt="Chocolate fondant dessert" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=900&q=80" alt="Mixed grill platter" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Wagyu steak close-up" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=700&q=80" alt="Pistachio cheesecake" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image lightbox">
+      <button id="lightbox-close" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       10. CONTACT
+  ═══════════════════════════════ -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Come <em>Visit Us</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info glass-card reveal">
+          <ul class="contact-list" role="list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div><strong>Address</strong><span>42 Clifton Boulevard, Block 5,<br />Clifton, Karachi, Pakistan</span></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div><strong>Phone</strong>
+                <a href="tel:+922134567890">+92 21 3456 7890</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div><strong>Email</strong>
+                <a href="mailto:hello@royaltaste.pk">hello@royaltaste.pk</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div><strong>Hours</strong>
+                <span>Mon – Fri: 12 PM – 11 PM<br />Sat – Sun: 11 AM – 11:30 PM</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map-wrap reveal">
+          <iframe
+            title="Royal Taste Restaurant Location – Clifton, Karachi"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.4117!2d67.0295!3d24.8138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f49!2sClifton%2C%20Karachi!5e0!3m2!1sen!2spk!4v1700000000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       11. FOOTER
+  ═══════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Royal Taste Home">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Royal <em>Taste</em></span>
+          </a>
+          <p>Where every dish tells a story. Fine dining since 1998, Karachi.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul role="list">
+            <li><span>Monday – Friday</span><span>12 PM – 11 PM</span></li>
+            <li><span>Saturday</span><span>11 AM – 11:30 PM</span></li>
+            <li><span>Sunday</span><span>11 AM – 11:30 PM</span></li>
+          </ul>
+          <a href="#reserve" class="btn btn-gold" style="margin-top:1.5rem;">Reserve Now</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay in the Know</h4>
+          <p>New menus, seasonal specials, and exclusive offers — in your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <input type="email" id="nl-email" placeholder="your@email.com" aria-label="Email for newsletter" />
+            <button type="submit" class="btn btn-gold" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+          <p id="nl-msg" class="nl-msg" hidden></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Royal Taste Restaurant. All rights reserved.</p>
+        <p>Crafted with <i class="fa-solid fa-heart" aria-label="love" style="color:var(--gold)"></i> in Karachi</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="app.js"></script>
+</body>
+</html>
